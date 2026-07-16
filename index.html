@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bera Rahul Teja — Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Bera Rahul Teja — full-stack developer specializing in Java, JavaScript, and secure end-to-end applications.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<header class="nav">
+  <div class="wrap">
+    <a href="#top" class="nav-brand"><span class="dot"></span> rahul.dev</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#education">education</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============================================================
+       HERO — genesis block
+       ============================================================ -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-block">
+        <div class="hero-meta">
+          <span>block #0000</span> · genesis · <span id="heroClock">--:--:--</span> IST
+        </div>
+        <h1>Bera Rahul Teja<span class="cursor">&nbsp;</span></h1>
+        <p class="role">// full-stack developer — java · javascript · secure systems</p>
+        <p class="lede">
+          MCA graduate who builds end-to-end applications spanning backend logic, databases,
+          and web front-ends — from a blockchain-secured banking system to relational,
+          data-driven apps. Comfortable moving across the stack and quick to pick up new tools.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="https://github.com/Rahulteja12" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+          <a href="mailto:bera24148@gmail.com" class="btn btn-ghost">Say hello</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><span class="num">2+</span><span class="label">Full-stack projects</span></div>
+          <div><span class="num">3</span><span class="label">Certifications</span></div>
+          <div><span class="num">7.8</span><span class="label">MCA CGPA</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="chain">
+
+    <!-- ============================================================
+         ABOUT
+         ============================================================ -->
+    <section class="block" id="about">
+      <div class="wrap">
+        <div class="block-head reveal">
+          <div class="node-dot"></div>
+          <div class="block-head-row">
+            <span class="hexid">block #0001 · about</span>
+            <h2>Who's building this</h2>
+          </div>
+        </div>
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <p>
+              I'm an <span class="tag">MCA graduate</span> with hands-on, project-based experience
+              building applications end to end — backend logic, databases, and the web front-end
+              that ties them together. My core languages are <span class="tag">Java</span> and
+              <span class="tag">JavaScript</span>, with practical exposure to HTML/CSS, MySQL, and
+              AWS cloud fundamentals.
+            </p>
+            <p>
+              I'm comfortable moving across the stack and quick to pick up new frameworks —
+              currently learning <span class="tag">TypeScript</span> and
+              <span class="tag">React Native</span> — and I'm motivated to own features from
+              design through deployment in a fast-paced team environment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS
+         ============================================================ -->
+    <section class="block" id="skills">
+      <div class="wrap">
+        <div class="block-head reveal">
+          <div class="node-dot"></div>
+          <div class="block-head-row">
+            <span class="hexid">block #0002 · skills</span>
+            <h2>What's in the stack</h2>
+          </div>
+        </div>
+        <div class="skills-grid reveal">
+          <div class="skill-cell">
+            <h3>Languages</h3>
+            <div class="chip-row">
+              <span class="chip">Java (Core)</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">TypeScript (learning)</span>
+              <span class="chip">Python</span>
+            </div>
+          </div>
+          <div class="skill-cell">
+            <h3>Web technologies</h3>
+            <div class="chip-row">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">React Native (learning)</span>
+            </div>
+          </div>
+          <div class="skill-cell">
+            <h3>Databases</h3>
+            <div class="chip-row">
+              <span class="chip">MySQL</span>
+              <span class="chip">JDBC</span>
+            </div>
+          </div>
+          <div class="skill-cell">
+            <h3>Cloud &amp; tools</h3>
+            <div class="chip-row">
+              <span class="chip">AWS Cloud (certified)</span>
+              <span class="chip">Git / GitHub</span>
+              <span class="chip">REST API fundamentals</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS
+         ============================================================ -->
+    <section class="block" id="projects">
+      <div class="wrap">
+        <div class="block-head reveal">
+          <div class="node-dot"></div>
+          <div class="block-head-row">
+            <span class="hexid">block #0003 · projects</span>
+            <h2>Shipped &amp; verified</h2>
+          </div>
+        </div>
+
+        <div class="projects-list" id="projectsList">
+          <!-- Project cards are rendered by script.js from the PROJECTS data array -->
+        </div>
+
+        <p class="more-repos reveal">
+          More repositories on <a href="https://github.com/Rahulteja12" target="_blank" rel="noopener">github.com/Rahulteja12 ↗</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EDUCATION
+         ============================================================ -->
+    <section class="block" id="education">
+      <div class="wrap">
+        <div class="block-head reveal">
+          <div class="node-dot"></div>
+          <div class="block-head-row">
+            <span class="hexid">block #0004 · education</span>
+            <h2>Record of study</h2>
+          </div>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <time>2023–2025</time>
+            <div>
+              <h3>Master of Computer Applications (MCA)</h3>
+              <p>Avanthi PG College · Osmani University — Dilsukhnagar, Hyderabad · CGPA 7.8</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <time>2020–2023</time>
+            <div>
+              <h3>B.Sc, Data Science</h3>
+              <p>Shivani Degree College · Satavahana University · CGPA 7.1</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-row reveal">
+          <span class="chip">Anudip Foundation — Java Full Stack Development</span>
+          <span class="chip">Python Essentials</span>
+          <span class="chip">AWS Cloud Computing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+    <section class="block contact-block" id="contact">
+      <div class="wrap">
+        <div class="block-head reveal">
+          <div class="node-dot"></div>
+          <div class="block-head-row">
+            <span class="hexid">block #0005 · contact</span>
+            <h2>Confirm a connection</h2>
+          </div>
+        </div>
+
+        <div class="contact-card reveal">
+          <h2>Let's build something</h2>
+          <p>Open to full-stack roles and collaborations. Reach out any time.</p>
+          <div class="contact-methods">
+            <a class="btn btn-primary" href="mailto:bera24148@gmail.com">bera24148@gmail.com</a>
+            <a class="btn btn-ghost" href="tel:+918367582655">+91 83675 82655</a>
+            <a class="btn btn-ghost" href="https://github.com/Rahulteja12" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /.chain -->
+
+  <footer>
+    <span class="hexid">block #FFFF · end of chain</span>
+    &copy; <span id="year"></span> Bera Rahul Teja. Built with HTML, CSS &amp; JavaScript.
+  </footer>
+
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>
